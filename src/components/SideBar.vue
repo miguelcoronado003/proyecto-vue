@@ -1,7 +1,7 @@
 <template>
-    <div class="sidebar">
-        <h2> barra  lateral</h2>
-        <router-link to="/listaDeTareas">lista de tareas</router-link>
+    <div class="SideBar">
+        <h2> Barra  lateral</h2>
+        <router-link to="/listaDeTareas" class="router-link">Lista de tareas</router-link>
     </div>
 </template>
 
@@ -10,9 +10,13 @@
 </script>
 
 <style scoped>
-.sidebar{
+.router-link{
+    color: black;
+}
+.SideBar{
     width: 200px;
-    background-color: #9c9ea1;
+    background: linear-gradient( 317deg, #5f2f9a, #076a81, #b269cd) no-repeat center;
+    min-height: 100%;
     padding: 20px;
 }
 </style>
