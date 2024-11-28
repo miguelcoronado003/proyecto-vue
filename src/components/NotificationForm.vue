@@ -29,7 +29,7 @@
 
       <!-- Mensaje Personalizado -->
       <textarea class="form-control mb-2" v-model="customMessage" placeholder="Escribe tu mensaje personalizado aquí"></textarea>
-      
+
       <!-- Checkbox Enviar al Maestro -->
       <div class="form-check mb-3">
         <input class="form-check-input" type="checkbox" id="sendToTeacher" v-model="sendToTeacher">
@@ -41,7 +41,7 @@
       <div>
         <br>
       </div>
-    </div>
+  </div>
   </div>
 
   <!-- Modal de Notificación -->
@@ -83,10 +83,10 @@ const classData = {
   '25/09/2024': ['Clase de Hip-Hop', 'Clase de Ballet'],
 };
 
+
+
 // Computed para obtener las clases de la fecha seleccionada
-const classesForSelectedDate = computed(() => {
-  return classData[selectedDate.value] || [];
-});
+const classesForSelectedDate = computed(() => classData[selectedDate.value] || []);
 
 // Inicializar el picker de fecha
 onMounted(() => {
@@ -102,12 +102,12 @@ onMounted(() => {
     },
     onSelect: (date) => {
       selectedDate.value = datePicker.value;
-    }
+    },
   });
 });
 
 // Función para enviar la notificación
-const sendNotification = (message) => {
+const sendNotification = () => {
   if (!selectedDate.value) {
     alert('Por favor, seleccione una fecha antes de enviar.');
     return;

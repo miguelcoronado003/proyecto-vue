@@ -1,9 +1,13 @@
 <template>
-  <MainView></MainView>
+  <Navbar></Navbar>
+  <FormNotificacion></FormNotificacion>
+  <Footer></Footer>
 </template>
 
 <script setup>
-import MainView from "./views/MainView.vue";
+import FormNotificacion from "./components/NotificationForm.vue";
+import Navbar from "./components/NavBArComponent.vue";
+import Footer from "./components/FooterComponent.vue";
 </script>
 
 <style scoped>

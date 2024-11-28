@@ -12,7 +12,7 @@ const router = createRouter({
      {
        path: '/listaDeTareas',
        name: 'Lista de tareas',
-       component: () => import('../components/ListaDeTareas.vue'),
+       component: () => import('../components/NotificationForm.vue'),
      },
   ],
 })
