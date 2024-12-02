@@ -1,4 +1,5 @@
 <template>
+  <br><br><br>
   <footer class="footer mt-auto py-3">
     <div class="container text-center">
       <p>&copy; 2024 Escuela de Baile. Todos los derechos reservados.</p>
