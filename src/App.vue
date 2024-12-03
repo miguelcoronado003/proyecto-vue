@@ -1,7 +1,13 @@
 <template>
-  <Navbar></Navbar>
+  <nav>
+    <Navbar></Navbar>
+  </nav>
+<div class="bodyy">
   <FormNotificacion></FormNotificacion>
+</div>
+<footer>
   <Footer></Footer>
+</footer>
 </template>
 
 <script setup>
@@ -11,9 +17,4 @@ import Footer from "./components/FooterComponent.vue";
 </script>
 
 <style scoped>
-body{
-    width: 100%;
-    background: linear-gradient( 317deg, #5f2f9a, #076a81, #b269cd) no-repeat center;
-    min-height: 100vh;
-}
 </style>
